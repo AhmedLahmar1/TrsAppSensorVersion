@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.TRS_VIEW">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+        android:process=":location"
+        android:allowBackup="true"
+        android:icon="@drawable/trs1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".login2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login"></activity>
+        <activity android:name=".confiramation" />
+        <activity android:name=".liste_oper" />
+        <activity android:name=".Main4Activity" />
+        <activity android:name=".Main3Activity" />
+        <activity
+            android:name=".Main2Activity"
+            android:process=":location"
+            ></activity>
+        <activity android:name=".ArretActivity" />
+        <activity android:name=".FinActivity" />
+        <activity android:name=".QualiteActivity" />
+        <activity android:name=".InfoActivity" />
+        <activity android:name=".ActivityMain" />
+        <service android:name=".services.ChronometerService"
+            android:process=":location"
+            />
+        <service android:name=".services.ChronometerService2"
+            android:process=":location"
+            />
+        <service android:name=".services.ChronometerService3"
+            android:process=":location"
+            />
+        <service android:name=".services.ChronometerServicePause"
+            android:process=":location"
+            />
+        <service android:name=".services.ChronometerServiceReglage"
+            android:process=":location"
+            />
+        <service android:name=".services.ChronometerServiceManque"
+            android:process=":location"
+            />
+        <service android:name=".services.ChronometerServiceMaintenance"
+            android:process=":location"
+            />
+        <service android:name=".services.ChronometerServiceRequis"
+            android:process=":location"
+            />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://sandroidx.constraintlayouchemas.android.com/apk/res-auto"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#049BFA"
+    android:orientation="vertical"
+    tools:context=".ActivityMain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/simed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:foregroundGravity="center|center_horizontal"
+            android:gravity="center"
+            android:text="SIMED Laboratoire"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#3F51B5"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app2:fontFamily="serif" />
+
+
+        <ImageView
+            android:id="@+id/syb"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginRight="80dp"
+            android:src="@drawable/syb" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/button_dem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:onClick="startChronometer"
+        android:text="Démarrer"
+        android:textStyle="bold"
+
+        />
+
+
+    <Button
+        android:id="@+id/button_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:onClick="pauseChronometer"
+        android:textStyle="bold"
+        android:text="Pause" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:onClick="resetChronometer"
+            android:textStyle="bold"
+            android:text="Reset"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tmp_ouv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Temps d'ouverture :"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:gravity="center_horizontal"
+            android:background="#FADBD8 "
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tmp_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+
+            android:text="Temps de fonctionnement :"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <Chronometer
+            android:id="@+id/chron_fct"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:background="#FADBD8 "
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/qte_prod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:text="Quantité de production :"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/qte_cal"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="2"
+            android:background="#FADBD8 "
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName"
+            android:text="00"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/qlte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="#5DADE2"
+            android:text="Qualité"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold"  />
+
+        <Button
+            android:id="@+id/arret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:background="#5DADE2"
+            android:text="Arret"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold"  />
+
+        <Button
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:background="#5DADE2"
+            android:text="Info"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold"  />
+
+        <Button
+            android:id="@+id/ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:background="#5DADE2"
+            android:text="Fin Travail"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

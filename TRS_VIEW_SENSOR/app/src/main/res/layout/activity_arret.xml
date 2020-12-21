@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context=".ArretActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/simed" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="400px"
+            app:srcCompat="@drawable/trs1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="405dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:paddingLeft="110px"
+                android:text="Planifé "
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/arret_inde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginBottom="20px"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="Arret"
+                android:text="Arrêts indéterminé" />
+
+            <Button
+                android:id="@+id/prepa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginBottom="20px"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="startChronometer2"
+                android:text="Préparation " />
+
+            <Button
+                android:id="@+id/main_prev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginBottom="20px"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="startChronometer3"
+                android:text="maintenance préventive" />
+
+            <Button
+                android:id="@+id/nettoy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginBottom="20px"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="startChronometer4"
+                android:text="Nettoyage" />
+
+            <Button
+                android:id="@+id/pause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginBottom="20px"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="startChronometer5"
+                android:text="Pause" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="405dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_millis"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="60px"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="00:00"
+                android:textColor="#070707"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <Chronometer
+                android:id="@+id/arret_indeter2"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:layout_marginRight="30dp"
+                android:background="@color/cardview_light_background"
+                android:gravity="center_horizontal"
+                android:textSize="20sp" />
+
+            <Chronometer
+                android:id="@+id/arret_indeter4"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:layout_marginRight="30dp"
+                android:background="@color/cardview_light_background"
+                android:gravity="center_horizontal"
+                android:textSize="20sp" />
+
+            <Chronometer
+                android:id="@+id/arret_indeter5"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:layout_marginRight="30dp"
+                android:background="@color/cardview_light_background"
+                android:gravity="center_horizontal"
+                android:textSize="20sp" />
+
+            <Chronometer
+                android:id="@+id/arret_indeter3"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:layout_marginRight="30dp"
+                android:background="@color/cardview_light_background"
+                android:gravity="center_horizontal"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="196dp"
+            android:layout_height="426dp"
+            android:layout_marginLeft="30px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55px"
+                android:layout_marginBottom="20px"
+                android:text="Quantité"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chron_qte_prod"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20px"
+                android:background="@color/cardview_light_background"
+                android:gravity="center_horizontal"
+                android:text="textview"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/restProd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80px"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="production"
+                android:text="Production" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:gravity="center"
+                android:text="Non Planifié"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/panne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="startChronoPanne"
+                android:text="Panne" />
+
+            <Button
+                android:id="@+id/reglage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="startChronoReglage"
+                android:text="Réglage" />
+
+            <Button
+                android:id="@+id/main_corr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="startChronoMaintenance"
+                android:text="Mainteance corrective" />
+
+            <Button
+                android:id="@+id/manque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="startChronoManque"
+                android:text="Manque" />
+
+            <Button
+                android:id="@+id/fermer_arret"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="fermerActivityArret"
+                android:text="fermer" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="404dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/arret_Pause"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="60px"
+                android:layout_marginRight="30dp"
+                android:background="@color/cardview_light_background"
+                android:gravity="center_horizontal"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/arret_indeter7"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:layout_marginRight="30dp"
+                android:background="@color/cardview_light_background"
+                android:gravity="center_horizontal"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/arret_indeter8"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:layout_marginRight="30dp"
+                android:background="@color/cardview_light_background"
+                android:gravity="center_horizontal"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/arret_indeter9"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="40px"
+                android:layout_marginRight="30dp"
+                android:background="@color/cardview_light_background"
+                android:gravity="center_horizontal"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

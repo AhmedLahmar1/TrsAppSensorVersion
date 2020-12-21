@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+
+    <TextView
+        android:id="@+id/textView101"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_weight="50"
+        android:paddingLeft="20px"
+
+        android:paddingTop="10px"
+        android:text="TextView101"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView202"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:paddingLeft="30px"
+        android:paddingTop="10px"
+        android:text="TextView202"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView303"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:paddingTop="10px"
+        android:text="TextView303"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView606"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:paddingLeft="30px"
+        android:paddingTop="10px"
+        android:text="TextView606"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView404"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:paddingLeft="50px"
+        android:paddingTop="10px"
+        android:text="TextView404"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView505"
+        android:layout_width="92dp"
+        android:layout_height="30dp"
+        android:paddingLeft="50px"
+        android:paddingTop="10px"
+        android:text="TextView505"
+        android:textColor="#000000" />
+</LinearLayout>
